@@ -7,7 +7,7 @@
 <title>Nikkah Invitation — Muhammadh Afrid &amp; Fathima Sawsan</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Marcellus&family=Cormorant+Garamond:wght@500;600;700&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Marcellus&family=Philosopher:ital,wght@0,400;0,700;1,400&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <style>
   :root{
     --bg:#f6e1ea;
@@ -30,7 +30,7 @@
     --inset-sm: inset 3px 3px 7px var(--sh-dark), inset -3px -3px 7px var(--sh-light);
 
     --pattern: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='72' height='72' viewBox='0 0 72 72'%3E%3Cg fill='none' stroke='%23d06a94' stroke-opacity='.13' stroke-width='1'%3E%3Crect x='22' y='22' width='28' height='28'/%3E%3Crect x='22' y='22' width='28' height='28' transform='rotate(45 36 36)'/%3E%3Ccircle cx='36' cy='36' r='7'/%3E%3Cpath d='M0 0L16 16M72 0L56 16M0 72L16 56M72 72L56 56M36 0V8M36 64V72M0 36H8M64 36H72'/%3E%3C/g%3E%3C/svg%3E");
-    --display: 'Cormorant Garamond', Georgia, serif;
+    --display: 'Philosopher', Georgia, sans-serif;
     --names: 'Marcellus', Georgia, serif;
     --ui: 'Outfit', system-ui, sans-serif;
     --arabic: 'Amiri', 'Traditional Arabic', serif;
@@ -38,6 +38,7 @@
   }
 
   *{ box-sizing:border-box; }
+  html{ font-synthesis-weight: none; }
   html{ scroll-behavior:smooth; }
   @media (prefers-reduced-motion: reduce){ html{ scroll-behavior:auto; } }
   body{
@@ -84,7 +85,7 @@
   .gate .salam{ font-size: 2rem; color: var(--rose-700); line-height:1.4; }
   .gate .salam-en{ font-size:.75rem; letter-spacing:.3em; text-transform:uppercase; color: var(--rose-600); margin-top:.2rem; }
   .gate .invited{ margin-top:1.6rem; font-size:.95rem; color: var(--ink); }
-  .gate .couple{ font-family: var(--names); font-weight:400; letter-spacing:.02em; font-size:2.1rem; color: var(--plum-900); line-height:1.1; margin-top:.4rem; }
+  .gate .couple{ font-family: var(--display); font-weight:400; letter-spacing:.02em; font-size:2.1rem; color: var(--plum-900); line-height:1.1; margin-top:.4rem; }
   .gate .couple span{ color: var(--rose-500); font-weight:500; }
   .open-btn{
     margin-top:2rem;
@@ -203,7 +204,7 @@
   .hero .lead{ margin-top:1.6rem; font-size:.9rem; line-height:1.7; color: var(--ink); }
   .names{
     margin: 1rem 0 0;
-    font-family: var(--names);
+    font-family: var(--display);
     font-weight:400;
     letter-spacing:.02em;
     line-height:1.12;
@@ -870,7 +871,7 @@ we joyfully invite you to the Nikkah of</p>
     ctx.textBaseline = 'middle';
     ctx.font = '600 13px Outfit, sans-serif';
     ctx.fillText('S C R A T C H   H E R E', w / 2, h / 2 + 22);
-    ctx.font = '600 22px "Cormorant Garamond", serif';
+    ctx.font = '22px Philosopher, sans-serif';
     ctx.fillText('to reveal our blessed day', w / 2, h / 2 + 50);
   }
 
@@ -993,7 +994,7 @@ we joyfully invite you to the Nikkah of</p>
   /* ---------- calendar ---------- */
   var title = 'Nikkah of Muhammadh Afrid & Fathima Sawsan';
   var place = 'Lee Meridian Hall, Sainthamaruthu, Sri Lanka';
-  var startUTC = '20261119T120000Z', endUTC = '20261119T150000Z';
+  var startUTC = '20261119T110000Z', endUTC = '20261119T140000Z';
   document.getElementById('gcal').href = 'https://calendar.google.com/calendar/render?action=TEMPLATE'
     + '&text=' + encodeURIComponent(title)
     + '&dates=' + startUTC + '/' + endUTC
